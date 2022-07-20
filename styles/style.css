@@ -88,7 +88,7 @@ Football Animation
     }
     100%{
         bottom: 60px;
-        transform: rotate(90deg);
+        transform: rotate(-60deg);
     }
 }
 
@@ -222,6 +222,7 @@ footer{
     background-color: var(--color-black);
     width: 100%;
     padding: 130px 0;
+    margin-top: 50px;
 }
 .footer-container{
     display: flex;
@@ -233,6 +234,7 @@ footer{
     font-size: 40px;
     font-weight: 700;
 }
+
 hr{
     margin: 50px auto;
     width: 80%;
@@ -312,6 +314,12 @@ Responsive Tablet Section
 
     .view-all{
         display: block;
+    }
+    footer{
+        padding: 70px 0;
+    }
+    ul li{
+        margin: 10px 10px;
     }
 }
 

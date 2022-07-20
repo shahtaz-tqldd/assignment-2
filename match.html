@@ -17,13 +17,14 @@
 </head>
 <body>
     <header>
+        <!-- Top Banner Section -->
         <div class="top-banner">
             <div class="banner-container">
                 <div class="banner-text-segment">
                     <h1 class="banner-title">The Gratest Show on the earth</h1>
-                    <p class="title-text">Welcome to the most live website you ever want to be. Enjoy your favourite
-                        match right here. We got your back to enjoy your center forward!</p>
-                    <button class="common-btn" to="_blank">Watch Live <i class="fas fa-regular fa-arrow-right-long arrow"></i></button>
+                    <p title="Welcome to the most live website you ever want to be. Enjoy your favourite match right here. We got your back to enjoy your center forward!" class="title-text">Welcome to the most live website you ever want to be. Enjoy your favourite
+                        match right here!</p>
+                    <button class="watch-btn" to="_blank">Watch Live <i class="fas fa-regular fa-arrow-right-long arrow"></i></button>
                     <div class="football-animation">
                         <img src="assets/football.png" alt="">
                     </div>
@@ -37,18 +38,21 @@
     </header>
     <main>
         <div class="body-container">
+
+            <!-- Side Menubar Section -->
             <aside>
                 <div class="option-container">
                     <div class="options">
-                        <button to="_blank" class="option-button active">Upcoming Match</button>
+                        <button class="option-button active"><a href="/match.html">Upcoming Match</a></button>
                         <button to="_blank" class="option-button">All Group</button>
-                        <button to="_blank" class="option-button">Blog</button>
+                        <button class="option-button"><a href="/index.html">Blog</a></button>
                     </div>
 
                 </div>
             </aside>
 
-            <div class="match-container">
+            <!-- Upcoming Match Section -->
+            <section class="match-container">
                 <div class="matches">
                     <div class="match">
                         <div class="flags">
@@ -105,8 +109,10 @@
                         <p class="match-date">April 01, 2023, 1.00 AM</p>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
+
+        <!-- View All Button Only For Tab -->
         <div class="view-all">
             <button to="_blank" class="view-all-btn">View All</button>
         </div>

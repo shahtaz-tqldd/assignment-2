@@ -1,3 +1,5 @@
+/*------- Google Fonts: Poppins and Manrope -------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap');
 
 /*------------------
@@ -52,7 +54,9 @@ header{
     color: #fff;
     margin: 20px 0 30px;
 }
-.common-btn{
+
+/*------- Watch Live Button -------- */
+.watch-btn{
     border-radius: 5px;
     border: none;
     padding: 16px 24px;
@@ -65,7 +69,7 @@ header{
     display: flex;
     align-items: center;
 }
-.common-btn:hover{
+.watch-btn:hover{
     padding: 16px 45px;
     background-color: #3fb2ff;
 }
@@ -75,7 +79,7 @@ header{
     margin-left: 10px;
     transition: padding 0.2s ease-in-out 0s;
 }
-.common-btn:hover .arrow{
+.watch-btn:hover .arrow{
     margin-left: 20px;
 }
 /*----------------- 
@@ -114,6 +118,9 @@ main{
     display: flex;
     margin-top: 60px;
 }
+
+/*------- Side Menu Bar -------- */
+
 .option-container{
     width: 312px;
     padding: 20px 0;
@@ -132,17 +139,24 @@ main{
     border: 1px solid #E8E8E8;
     padding: 16px 0;
     font-size: 18px;
-    color: var(--color-black);
     background-color: #fff;
     cursor: pointer;
     transition: padding 0.2s ease-in-out 0s;
     margin: 10px 0;
 }
+
+.option-button a{
+    text-decoration: none;
+    color: var(--color-black);
+}
 .active{
     background-color: var(--color-indigo);
     border: none;
+}
+.active a{
     color: #fff;
 }
+
 /*------------------
 Article Section
 ------------------*/
@@ -240,6 +254,9 @@ hr{
     width: 80%;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/*------- Footer Menu-------- */
+
 .footer-menu{
     text-align: center;
 }
@@ -253,18 +270,22 @@ ul{
 
 ul li a{
     text-decoration: none;
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     color: #B9B9B9;
     margin: 0 20px;
 }
+
+/*------- Social Media Icons-------- */
+
 .socialmedia-link{
     margin-top: 40px;
 }
 .socialmedia-link a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 .socialmedia-link a .icon{
     font-size: 20px;
@@ -272,13 +293,14 @@ ul li a{
     padding: 10px;
     border-radius: 50%;
     margin: 0 8px;
-
 }
 
 /*------------------------
 Responsive Tablet Section
 ------------------------*/
 @media only screen and (max-width: 992px) and (min-width: 689px) {
+    
+    /*------- Top Banner -------- */
     .banner-container{
         margin: 10px 75px;
     }
@@ -291,13 +313,12 @@ Responsive Tablet Section
         margin: 10px 0 20px;
     }
 
-    .articles{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
+    /*------- Body Container -------- */
     .body-container{
         flex-direction: column;
     }
+
+    /*------- Top Menu Bar -------- */
     .option-container{
         width: 100%;
         height: auto;
@@ -312,9 +333,17 @@ Responsive Tablet Section
         margin: 0 20px;
     }
 
+    /*------- Articles -------- */
+    .articles{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*------- View All Button -------- */
     .view-all{
         display: block;
     }
+
+    /*------- Footer Section -------- */
     footer{
         padding: 70px 0;
     }
@@ -330,6 +359,7 @@ Responsive Mobile Section
     header{
         margin: 20px;
     }
+    /*------- Top Banner -------- */
     .banner-container{
         flex-direction: column;
         margin: 30px 20px;
@@ -338,7 +368,7 @@ Responsive Mobile Section
         justify-content: center;
     }
     .banner-text-segment{
-        width: 100%;
+        width: 80%;
     }
     .banner-title{
         font-size: 22px;
@@ -348,7 +378,7 @@ Responsive Mobile Section
         font-size: 14px;
         margin: 20px 0 30px;
     }
-    .common-btn{
+    .watch-btn{
         margin: 0 auto;
     }
     .banner-image-segment img{
@@ -359,17 +389,18 @@ Responsive Mobile Section
         display: none;
         
     }
+
+    /*------- Body Container -------- */
+
     main{
         padding: 0 20px;
     }
-
-    .articles{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
     .body-container{
         flex-direction: column;
     }
+
+    /*------- Top Menu Bar -------- */
+    
     .option-container{
         width: 100%;
         height: auto;
@@ -384,9 +415,20 @@ Responsive Mobile Section
         margin: 10px 20px;
     }
 
+    /*------- Articles -------- */
+
+    .articles{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*------- View All Button -------- */
+
     .view-all{
         display: none;
     }
+
+    /*------- Footer Section -------- */
+
     footer{
         margin-top: 50px;
         padding: 25px 0;
@@ -410,5 +452,4 @@ Responsive Mobile Section
     .socialmedia-link a .icon{
         font-size: 18px;
     }
-
 }

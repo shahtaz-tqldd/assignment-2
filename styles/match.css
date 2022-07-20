@@ -1,3 +1,6 @@
+/*------------------------
+Upcoming Match Section
+-------------------------*/
 .matches{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -44,7 +47,6 @@ Responsive Tab Section
     .matches{
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 /*------------------------
